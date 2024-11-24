@@ -73,7 +73,7 @@ const eventGenerator = (): IEvent => {
   events.map((event) => pubSubService.publish(event));
 
   // Test add machine 004
-  machineRepository.add(new Machine("004"));
+  // machineRepository.add(new Machine("004"));
 
   // const events2 = [
   //   new MachineSaleEvent(3, "001"),
