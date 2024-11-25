@@ -1,5 +1,5 @@
 import { EventType } from "../constants";
-import { IEvent } from "../interfaces/IEvent";
+import { IEvent } from "../interfaces";
 
 export class LowStockWarningEvent implements IEvent {
   constructor(private readonly _machineId: string) {}

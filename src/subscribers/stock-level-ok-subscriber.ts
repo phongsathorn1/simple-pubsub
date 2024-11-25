@@ -1,5 +1,5 @@
-import { StockLevelOkEvent } from "../events/stock-level-ok-event";
-import { ISubscriber } from "../interfaces/ISubscriber";
+import { StockLevelOkEvent } from "../events";
+import { ISubscriber } from "../interfaces";
 import { MachineRepository } from "../repositories/machine";
 
 export class StockLevelOkSubscriber implements ISubscriber {

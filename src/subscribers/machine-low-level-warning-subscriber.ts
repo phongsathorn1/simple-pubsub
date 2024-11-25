@@ -1,5 +1,5 @@
-import { LowStockWarningEvent } from "../events/low-stock-warning-event";
-import { ISubscriber } from "../interfaces/ISubscriber";
+import { LowStockWarningEvent } from "../events";
+import { ISubscriber } from "../interfaces";
 import { MachineRepository } from "../repositories/machine";
 
 export class StockWarningSubscriber implements ISubscriber {
@@ -12,7 +12,9 @@ export class StockWarningSubscriber implements ISubscriber {
   handle(event: LowStockWarningEvent): void {
     const machine = this._machineRepository.findById(event.machineId());
     if (!machine) {
-      console.log("[StockWarningSubscriber] #handle - Error!: Machine not found!");
+      console.log(
+        "[StockWarningSubscriber] #handle - Error!: Machine not found!"
+      );
       return;
     }
 

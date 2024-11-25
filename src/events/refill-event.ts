@@ -1,5 +1,5 @@
 import { EventType } from "../constants";
-import { IEvent } from "../interfaces/IEvent";
+import { IEvent } from "../interfaces";
 
 export class MachineRefillEvent implements IEvent {
   constructor(

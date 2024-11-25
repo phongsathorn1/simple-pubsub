@@ -1,7 +1,6 @@
 import { configs } from "../constants";
-import { MachineRefillEvent } from "../events/refill-event";
-import { StockLevelOkEvent } from "../events/stock-level-ok-event";
-import { ISubscriber } from "../interfaces/ISubscriber";
+import { MachineRefillEvent, StockLevelOkEvent } from "../events";
+import { ISubscriber } from "../interfaces";
 import { MachineRepository } from "../repositories/machine";
 import { PublishSubscribeService } from "../services/pubsub";
 

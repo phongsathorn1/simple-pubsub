@@ -1,5 +1,5 @@
 import { Machine } from "../entities/machine";
-import { IRepository } from "../interfaces/IRepository";
+import { IRepository } from "../interfaces";
 
 export class MachineRepository implements IRepository<Machine> {
   private static _instance: MachineRepository;

@@ -1,15 +1,15 @@
 import { EventType } from "./constants";
 import { Machine } from "./entities/machine";
-import { MachineRefillEvent } from "./events/refill-event";
-import { MachineSaleEvent } from "./events/sale-event";
-import { IEvent } from "./interfaces/IEvent";
-import { IPublishSubscribeService } from "./interfaces/IPublishSubscribeService";
+import { MachineSaleEvent, MachineRefillEvent } from "./events";
+import { IEvent, IPublishSubscribeService } from "./interfaces";
 import { MachineRepository } from "./repositories/machine";
 import { PublishSubscribeService } from "./services/pubsub";
-import { StockWarningSubscriber } from "./subscribers/machine-low-level-warning-subscriber";
-import { MachineRefillSubscriber } from "./subscribers/machine-refill-subscriber";
-import { MachineSaleSubscriber } from "./subscribers/machine-sale-subscriber";
-import { StockLevelOkSubscriber } from "./subscribers/stock-level-ok-subscriber";
+import {
+  MachineSaleSubscriber,
+  MachineRefillSubscriber,
+  StockWarningSubscriber,
+  StockLevelOkSubscriber,
+} from "./subscribers";
 
 // helpers
 const randomMachine = (): string => {

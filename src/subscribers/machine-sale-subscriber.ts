@@ -1,7 +1,6 @@
 import { configs } from "../constants";
-import { LowStockWarningEvent } from "../events/low-stock-warning-event";
-import { MachineSaleEvent } from "../events/sale-event";
-import { ISubscriber } from "../interfaces/ISubscriber";
+import { MachineSaleEvent, LowStockWarningEvent } from "../events";
+import { ISubscriber } from "../interfaces";
 import { MachineRepository } from "../repositories/machine";
 import { PublishSubscribeService } from "../services/pubsub";
 
